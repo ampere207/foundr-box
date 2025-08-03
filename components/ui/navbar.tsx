@@ -15,7 +15,6 @@ export default function Navbar() {
     { name: 'Market Research', href: '/market-research' },
     { name: 'Pitch Deck Assistant', href: '/pitch-assistant' },
     { name: strategistName, href: '/growth-strategist' },
-    { name: 'Find a Cofounder', href: '/find-a-cofounder' },
   ]
 
   return (

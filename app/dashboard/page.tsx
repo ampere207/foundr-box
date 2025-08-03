@@ -352,17 +352,103 @@ export default function FoundrBoxDashboard() {
     await addActivity(`Updated ${metrics[index].name}: ${field} = ${newValue}`, 'Metrics')
   }
 
-  // Monthly data handlers with Supabase save
-  const handleAddMonthlyData = async () => {
-    if (!newMonthlyData.month) return
-    
-    const updatedMonthlyData = [...monthlyData, { ...newMonthlyData }]
-    setMonthlyData(updatedMonthlyData)
-    await saveDashboardData('monthly_data', updatedMonthlyData)
-    await addActivity(`Added monthly data for ${newMonthlyData.month}`, 'Market')
-    
-    setNewMonthlyData({ month: '', users: 0, revenue: 0 })
+  const getMonthOrder = (monthString: string) => {
+  // Handle different month formats
+  const monthStr = monthString.toLowerCase().trim();
+  
+  // Month abbreviations
+  const monthAbbreviations = {
+    'jan': 0, 'january': 0, 'January': 0,
+    'feb': 1, 'february': 1, 'February': 1,
+    'mar': 2, 'march': 2, 'March': 2,
+    'apr': 3, 'april': 3, 'April': 3,
+    'may': 4, 'May': 4,
+    'jun': 5, 'june': 5, 'June': 5,
+    'jul': 6, 'july': 6, 'July': 6,
+    'aug': 7, 'august': 7, 'August': 7,
+    'sep': 8, 'september': 8, 'September': 8,
+    'oct': 9, 'october': 9, 'October': 9,
+    'nov': 10, 'november': 10, 'November': 10,
+    'dec': 11, 'december': 11, 'December': 11
+  };
+  
+  // Extract year if present (e.g., "Jan 2024", "January 2024")
+  const yearMatch = monthStr.match(/(\d{4})/);
+  const year = yearMatch ? parseInt(yearMatch[1]) : new Date().getFullYear();
+  
+  // Find month name in the string
+  let monthIndex = -1;
+  for (const [key, value] of Object.entries(monthAbbreviations)) {
+    if (monthStr.includes(key)) {
+      monthIndex = value;
+      break;
+    }
   }
+  
+  // Handle quarter format (Q1, Q2, etc.)
+  if (monthStr.includes('q1')) monthIndex = 0;
+  else if (monthStr.includes('q2')) monthIndex = 3;
+  else if (monthStr.includes('q3')) monthIndex = 6;
+  else if (monthStr.includes('q4')) monthIndex = 9;
+  
+  // Handle week format (Week 1, Week 2, etc.)
+  const weekMatch = monthStr.match(/week\s*(\d+)/);
+  if (weekMatch) {
+    const weekNum = parseInt(weekMatch[1]);
+    return year * 1000 + weekNum; // Sort weeks within year
+  }
+  
+  // If no month found, return a high number to put it at the end
+  if (monthIndex === -1) {
+    return year * 100 + 99;
+  }
+  
+  // Return year * 100 + month (e.g., 202401 for Jan 2024)
+  return year * 100 + monthIndex;
+};
+
+  // Monthly data handlers with Supabase save
+const handleAddMonthlyData = async () => {
+  if (!newMonthlyData.month) return
+  
+  const updatedMonthlyData = [...monthlyData, { ...newMonthlyData }];
+  
+  // Sort the data chronologically
+  updatedMonthlyData.sort((a, b) => {
+    const orderA = getMonthOrder(a.month);
+    const orderB = getMonthOrder(b.month);
+    return orderA - orderB;
+  });
+  
+  setMonthlyData(updatedMonthlyData);
+  await saveDashboardData('monthly_data', updatedMonthlyData);
+  await addActivity(`Added monthly data for ${newMonthlyData.month}`, 'Market');
+  
+  // Update the metrics based on the latest monthly data
+  const latestUsers = newMonthlyData.users;
+  const latestRevenue = newMonthlyData.revenue;
+  
+  // Calculate change percentage (using the last entry in sorted array)
+  const prevData = updatedMonthlyData[updatedMonthlyData.length - 2]; // Second to last after sorting
+  const userChange = prevData ? ((latestUsers - prevData.users) / prevData.users) * 100 : 0;
+  const revenueChange = prevData ? ((latestRevenue - prevData.revenue) / prevData.revenue) * 100 : 0;
+  
+  // Update metrics automatically
+  const updatedMetrics = metrics.map(metric => {
+    if (metric.name === 'Monthly Users') {
+      return { ...metric, value: latestUsers, change: Math.round(userChange) };
+    }
+    if (metric.name === 'Revenue') {
+      return { ...metric, value: latestRevenue, change: Math.round(revenueChange) };
+    }
+    return metric;
+  });
+  
+  setMetrics(updatedMetrics);
+  await saveDashboardData('metrics', updatedMetrics);
+  
+  setNewMonthlyData({ month: '', users: 0, revenue: 0 });
+};
 
   // Competitor data handlers with Supabase save
   const handleUpdateCompetitorData = async (index: number, value: number) => {
@@ -425,7 +511,7 @@ export default function FoundrBoxDashboard() {
   }
 
   // Metric Card Component
-  function MetricCard({ metric, index }: { metric: Metric; index: number }) {
+ function MetricCard({ metric, index }: { metric: Metric; index: number }) {
     const isPositive = metric.change >= 0
     const [isEditing, setIsEditing] = useState(false)
     const [tempValue, setTempValue] = useState(metric.value)

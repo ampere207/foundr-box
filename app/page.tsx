@@ -115,12 +115,6 @@ export default function HomePage() {
       icon: featureIcons.strategy,
       gradient: "from-cyan-500 to-blue-600"
     },
-    {
-      title: "Co-Founder Connect",
-      description: "Match with founders who complement your skills and vision. Spark synergy and build with confidence.",
-      icon: featureIcons.connect,
-      gradient: "from-teal-500 to-blue-500"
-    }
   ]
 
   const benefits = [
@@ -128,7 +122,6 @@ export default function HomePage() {
     "Advanced AI Support: real-time validation, research, and pitch insights.",
     "Interactive, Responsive UI: optimize your workflow anywhere.",
     "Serious Security: built on Supabase and Clerk for total peace of mind.",
-    "Founder Community: network, learn, and share with the best.",
   ]
 
   const testimonials = [
