@@ -1,16 +1,10 @@
-<div align="center">
-  <img src="‪D:\Desktop\Dev\Resume Projects\foun.png" alt="FoundrBox Logo" width="120"/>
-  
+<img width="1024" height="1536" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
+
   # 🚀 FoundrBox
   
   **The Ultimate AI-Powered Startup Platform**
   
   *From idea validation to growth strategy - your complete startup journey in one platform*
-  
-  [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-brightgreen?style=for-the-badge)](https://your-app-url.vercel.app)
-  [![GitHub Stars](https://img.shields.io/github/stars/yourusername/foundrbox?style=for-the-badge&logo=github)](https://github.com/yourusername/foundrbox)
-  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-  
 
 
 ---
@@ -174,20 +168,6 @@ graph LR
     D --> E[🚀 Growth Strategy]
     E --> F[📈 Track Progress]
     F --> G[💰 Secure Funding]
-    
-    B --> H[📈 Dashboard]
-    C --> H
-    D --> H
-    E --> H
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-    style F fill:#f1f8e9
-    style G fill:#e0f2f1
-    style H fill:#fff8e1
 
 ---
 
@@ -226,7 +206,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🌟 **If FoundrBox impressed you, please give it a star!** ⭐
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Aashrith M P**
 
 *Empowering the next generation of successful startups*
 
