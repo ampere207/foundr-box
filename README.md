@@ -162,27 +162,16 @@ FoundrBox is an all-in-one SaaS platform that empowers early-stage startups with
 
 ## 📈 Complete User Journey
 
-graph LR
-    A[🔐 Sign Up] --> B[💡 Idea Validation]
-    B --> C[📊 Market Research]
-    C --> D[🎯 Pitch Preparation]
-    D --> E[🚀 Growth Strategy]
-    E --> F[📈 Progress Tracking]
-    F --> G[💰 Funding]
 
-    B --> H[📈 Dashboard]
-    C --> H
-    D --> H
-    E --> H
 
-    style A fill:#e1f5fe
-    style B fill:#f3f5fe
-    style C fill:#e8f5fe
-    style D fill:#fff5fe
-    style E fill:#fce3fe
-    style F fill:#f1f8fe
-    style G fill:#e1f5fe
-    style H fill:#fff8fe
+| Step 1 | Step 2 | Step 3 | Step 4 | Step 5 | Step 6 | Step 7 |
+|--------|--------|--------|--------|--------|--------|--------|
+| 🔐 Sign Up | 💡 Validate Ideas | 📊 Market Research | 🎯 Create Pitch | 🚀 Growth Strategy | 📈 Track Progress | 💰 Secure Funding |
+
+**📈 Dashboard Integration:** All steps connect to your central analytics dashboard for real-time monitoring
+
+</div>
+
 
 
 ---
