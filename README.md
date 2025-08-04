@@ -143,13 +143,16 @@ FoundrBox is an all-in-one SaaS platform that empowers early-stage startups with
 
 ## 📱 Platform Screenshots
 
+<img width="1347" height="813" alt="foundr-box-home-page" src="https://github.com/user-attachments/assets/5de94007-a399-4785-9e21-7b2127046513" />
+
 
   
   Analytics Dashboard - Real-time startup metrics and team management
 
 
 
-  
+  <img width="1351" height="814" alt="foundr-box-dashboard" src="https://github.com/user-attachments/assets/6ca1835d-2b9d-431d-88cb-267fce9eb54e" />
+
   
 
 
