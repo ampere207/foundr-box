@@ -602,7 +602,7 @@ Based on these comprehensive details about my startup, please provide your exper
                   🚀
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-3">
-                  Hey {user?.firstName}! I'm Alex 👋
+                  Hey {user?.firstName}! I&apos;m Alex 👋
                 </h2>
                 <p className="text-gray-600 mb-8 max-w-lg mx-auto">
                   I&apos;m your personal growth strategist. Let&apos;s chat about scaling your startup, user acquisition, or any growth challenges you&apos;re facing!
