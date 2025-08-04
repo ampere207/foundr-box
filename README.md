@@ -1,5 +1,6 @@
-<img width="80" height="80" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
-
+<div align="center">
+<img width="100" height="100" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
+</div>
   # 🚀 FoundrBox
   
   **The Ultimate AI-Powered Startup Platform**
@@ -162,12 +163,27 @@ FoundrBox is an all-in-one SaaS platform that empowers early-stage startups with
 ## 📈 Complete User Journey
 
 graph LR
-    A[🔐 Sign Up] --> B[💡 Validate Ideas]
+    A[🔐 Sign Up] --> B[💡 Idea Validation]
     B --> C[📊 Market Research]
-    C --> D[🎯 Create Pitch]
+    C --> D[🎯 Pitch Preparation]
     D --> E[🚀 Growth Strategy]
-    E --> F[📈 Track Progress]
-    F --> G[💰 Secure Funding]
+    E --> F[📈 Progress Tracking]
+    F --> G[💰 Funding]
+
+    B --> H[📈 Dashboard]
+    C --> H
+    D --> H
+    E --> H
+
+    style A fill:#e1f5fe
+    style B fill:#f3f5fe
+    style C fill:#e8f5fe
+    style D fill:#fff5fe
+    style E fill:#fce3fe
+    style F fill:#f1f8fe
+    style G fill:#e1f5fe
+    style H fill:#fff8fe
+
 
 ---
 
