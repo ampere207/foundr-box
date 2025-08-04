@@ -26,18 +26,18 @@ export async function POST(request: Request) {
       // Insert new user
       const { error } = await supabase
         .from('users')
-        .insert({
+        .upsert({
           id,
           email,
           full_name,
         })
 
       if (error) {
-        console.error('Database error:', error)
+       // console.error('Database error:', error)
         return NextResponse.json({ error: error.message }, { status: 500 })
       }
 
-      console.log('User inserted successfully:', id)
+      //console.log('User inserted successfully:', id)
     } else {
       console.log('User already exists:', id)
     }
