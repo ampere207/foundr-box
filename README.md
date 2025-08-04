@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/yourusername/logo.png" alt="FoundrBox Logo" width="200"/>
+  <img src="https://user-images.githubusercontent.com/ampere207/logo.png" alt="FoundrBox Logo" width="200"/>
   <h1>🚀 FoundrBox</h1>
   <h3>The Ultimate AI-Powered Startup Platform</h3>
   <p><em>From Idea to IPO - Your Complete Startup Journey in One Platform</em></p>
