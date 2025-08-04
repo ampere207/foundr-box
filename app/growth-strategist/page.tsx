@@ -480,7 +480,7 @@ Based on these comprehensive details about my startup, please provide your exper
                   onClick={() => setShowIdeaPanel(false)}
                   className="w-full py-2 px-4 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm"
                 >
-                  I'll type manually instead
+                  I&apos;ll type manually instead
                 </button>
               </div>
             </div>
@@ -605,7 +605,7 @@ Based on these comprehensive details about my startup, please provide your exper
                   Hey {user?.firstName}! I'm Alex 👋
                 </h2>
                 <p className="text-gray-600 mb-8 max-w-lg mx-auto">
-                  I'm your personal growth strategist. Let's chat about scaling your startup, user acquisition, or any growth challenges you're facing!
+                  I&apos;m your personal growth strategist. Let&apos;s chat about scaling your startup, user acquisition, or any growth challenges you&apos;re facing!
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl mx-auto">

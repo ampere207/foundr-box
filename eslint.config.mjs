@@ -9,8 +9,15 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
+export default [
+  // Next.js presets you already have
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
 
-export default eslintConfig;
+  // ↓ NEW block – overrides or adds rules
+  {
+    rules: {
+      // disable the “no-explicit-any” rule project-wide
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+];

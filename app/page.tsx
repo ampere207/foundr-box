@@ -199,7 +199,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-xl md:text-2xl max-w-4xl mx-auto text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-              The serious founder's operating system — validate ideas, conduct research, get strategic insights, 
+              The serious founder&apos;s operating system — validate ideas, conduct research, get strategic insights, 
               impress investors, and connect with your ideal team.
             </p>
             
@@ -263,7 +263,7 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                From idea validation to investor presentations, we've got every aspect of your startup journey covered.
+                From idea validation to investor presentations, we&apos;ve got every aspect of your startup journey covered.
               </p>
             </div>
 
@@ -303,7 +303,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose FoundrBox?</h2>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
-                Join thousands of successful founders who've transformed their ideas into thriving businesses.
+                Join thousands of successful founders who&apos;ve transformed their ideas into thriving businesses.
               </p>
             </div>
 
@@ -352,7 +352,7 @@ export default function HomePage() {
                   </div>
                   
                   <blockquote className="text-xl md:text-2xl font-medium text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl">
-                    "{testimonials[showTestimonial].quote}"
+                    &quot;{testimonials[showTestimonial].quote}&quot;
                   </blockquote>
                   
                   <div className="flex flex-col items-center">

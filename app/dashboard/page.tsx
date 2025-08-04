@@ -620,7 +620,7 @@ const handleAddMonthlyData = async () => {
             <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent mb-4">
               Welcome to FoundrBox
             </h1>
-            <p className="text-xl text-gray-600">Let's set up your startup journey</p>
+            <p className="text-xl text-gray-600">Let&apos;s set up your startup journey</p>
           </div>
 
           <div className="flex justify-center mb-12">
@@ -1381,7 +1381,7 @@ const handleAddMonthlyData = async () => {
                 ))}
                 <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-100">
                   <p className="text-xs text-blue-700">
-                    💡 <strong>Tip:</strong> Total percentages don't need to equal 100%. Focus on relative market positions and opportunities.
+                    💡 <strong>Tip:</strong> Total percentages don&apos;t need to equal 100%. Focus on relative market positions and opportunities.
                   </p>
                 </div>
               </div>

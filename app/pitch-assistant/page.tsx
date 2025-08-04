@@ -795,7 +795,7 @@ export default function PitchAssistantPage() {
                     </label>
                     {validatedIdeas.length === 0 ? (
                       <div className="text-center py-8 text-gray-500">
-                        <p>No validated ideas found. Please validate an idea first or use the "New Idea" option.</p>
+                        <p>No validated ideas found. Please validate an idea first or use the &quot;New Idea&quot; option.</p>
                       </div>
                     ) : (
                       <div className="grid grid-cols-1 gap-4 max-h-80 overflow-y-auto">

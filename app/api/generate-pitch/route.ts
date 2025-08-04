@@ -165,7 +165,7 @@ Description: ${idea_description || 'No detailed description provided'}
 
 Respond with ONLY valid JSON following the exact structure specified in the system instruction. No markdown formatting, no code blocks, no explanations - just pure JSON.`
 
-    let pitchContent: any
+    let pitchContent: Record<string, unknown>;
 
     try {
       // Call Gemini API

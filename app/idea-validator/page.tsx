@@ -548,7 +548,7 @@ export default function IdeaValidatorPage() {
             💡 Idea Validator
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Get expert AI analysis of your startup idea's core strengths, potential challenges, and actionable recommendations for success
+            Get expert AI analysis of your startup idea&apos;s core strengths, potential challenges, and actionable recommendations for success
           </p>
         </motion.header>
 
@@ -676,7 +676,7 @@ export default function IdeaValidatorPage() {
                   <>
                     <div>
                       <label className="block text-sm font-bold text-gray-700 mb-3">
-                        What's your startup idea? *
+                        What&apos;s your startup idea? *
                       </label>
                       <input
                         type="text"
@@ -734,7 +734,7 @@ export default function IdeaValidatorPage() {
                   <>
                     <div>
                       <label className="block text-sm font-bold text-gray-700 mb-3">
-                        What's your unique value proposition? *
+                        What&apos;s your unique value proposition? *
                       </label>
                       <textarea
                         value={formData.unique_value_proposition}
