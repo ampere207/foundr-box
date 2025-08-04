@@ -1,4 +1,4 @@
-<img width="1024" height="1536" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
+<img width="80" height="80" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
 
   # 🚀 FoundrBox
   
