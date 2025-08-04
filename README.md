@@ -1,6 +1,4 @@
-<div align="center">
-<img width="100" height="100" alt="foun" src="https://github.com/user-attachments/assets/cbdfd0fd-e923-4341-8d8f-330dd65e9559" />
-</div>
+
   # 🚀 FoundrBox
   
   **The Ultimate AI-Powered Startup Platform**
@@ -143,7 +141,8 @@ FoundrBox is an all-in-one SaaS platform that empowers early-stage startups with
 
 ## 📱 Platform Screenshots
 
-<img width="1347" height="813" alt="foundr-box-home-page" src="https://github.com/user-attachments/assets/5de94007-a399-4785-9e21-7b2127046513" />
+<img width="1347" height="813" alt="foundr-box-home-page" src="https://github.com/user-attachments/assets/c2f5c72f-51dd-438c-b183-ada87ae3569a" />
+
 
 
   
@@ -151,14 +150,8 @@ FoundrBox is an all-in-one SaaS platform that empowers early-stage startups with
 
 
 
-  <img width="1351" height="814" alt="foundr-box-dashboard" src="https://github.com/user-attachments/assets/6ca1835d-2b9d-431d-88cb-267fce9eb54e" />
+<img width="1351" height="614" alt="foundr-box-dashboard" src="https://github.com/user-attachments/assets/2c1cd9b4-24f0-4d8f-b8d0-a9720bd7b522" />
 
-  
-
-
-
-  
-  
 
 
 ---
